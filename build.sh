@@ -18,8 +18,12 @@ if [ ! -f "$ICON_PATH" ]; then
 fi
 
 # App bauen
-nativefier "https://chat.openai.com"   --name "$APP_NAME"   --icon "$ICON_PATH"   --darwin-dark-mode   --overwrite
-
+nativefier "https://chat.openai.com" \
+  --name "ChatGPT" \
+  --icon "chatgpt.icns" \
+  --darwin-dark-mode \
+  --user-agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" \
+  --overwrite
 echo ""
 echo "✅ Fertig! Du findest die App im Ordner: ${APP_NAME}-darwin-*"
 echo "Ziehe die .app am besten ins Programme-Verzeichnis."
