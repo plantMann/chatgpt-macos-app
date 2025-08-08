@@ -28,4 +28,4 @@ Umgesetzt mit [Nativefier](https://github.com/nativefier/nativefier).
 
 ## Lizenz
 
-MIT
+[MIT](LICENSE)
